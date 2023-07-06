@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+"""Type Checking"""
 def sum_list(input_list: float) -> float:
     """Return sum of list of floats
 
