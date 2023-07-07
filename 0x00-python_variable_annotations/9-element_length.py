@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Type Checking"""
-from typing import List, Sequence, Tuple
+""" module for annotation work python"""
+from typing import Iterable, Sequence, List, Tuple
 
-def element_length(lst: List[Sequence]) -> List[int]:
-    """Annotate the below function’s parameters and return values with the
-    appropriate types"""
-    return [len(i) for i in lst]
+
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    """
+        function make_multiplier that takes a float multiplier as argument
+        and returns a function that multiplies a float by multiplier
+    """
+    return [(i, len(i)) for i in lst]
