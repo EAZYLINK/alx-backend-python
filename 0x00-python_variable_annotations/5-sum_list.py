@@ -4,8 +4,8 @@ from typing import List
 
 
 def sum_list(input_list: List[float]) -> float:
-    """Return sum of list of floats
-
+    """
+    Return sum of list of floats
     Args:
         input_list (float): list of floats
 
